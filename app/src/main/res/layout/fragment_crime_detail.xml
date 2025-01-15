@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="365dp"
+        android:layout_height="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.086">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/md_theme_background_mediumContrast"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/crime_title"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/crime_title_hint"
+                android:inputType="text"
+                app:layout_constraintStart_toEndOf="@+id/crime_photo"
+                app:layout_constraintTop_toBottomOf="@+id/textTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/textTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/crime_title_label"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/crime_photo"
+                app:layout_constraintTop_toTopOf="@+id/crime_photo" />
+
+            <CheckBox
+                android:id="@+id/crime_solved"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/crime_solved_label"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/crime_photo"
+                app:layout_constraintTop_toBottomOf="@+id/crime_camera" />
+
+            <ImageView
+                android:id="@+id/crime_photo"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/md_theme_scrim"
+                android:contentDescription="this is your photo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/crime_camera"
+                android:padding="15dp"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/camera_back"
+                android:contentDescription="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/crime_photo"
+                app:layout_constraintHorizontal_bias="0.714"
+                app:layout_constraintStart_toStartOf="@+id/crime_photo"
+                app:layout_constraintTop_toBottomOf="@+id/crime_photo"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@android:drawable/ic_menu_camera"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/crime_date"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/crime_date_text"
+                app:icon="@drawable/ic_calendar"
+                app:layout_constraintEnd_toStartOf="@+id/crime_suspect"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crime_solved" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/crime_suspect"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/crime_suspect_text"
+                app:icon="@drawable/ic_account"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/crime_date"
+                app:layout_constraintTop_toBottomOf="@+id/crime_solved" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/crime_report"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="28dp"
+                android:text="@string/crime_report_text"
+                app:icon="@drawable/ic_share"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/crime_priority"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/crime_date" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/crime_priority"
+                android:layout_width="130dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="28dp"
+                android:text="@string/crime_priority_text"
+                app:icon="@drawable/ic_priority"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/crime_report"
+                app:layout_constraintTop_toBottomOf="@+id/crime_suspect" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
