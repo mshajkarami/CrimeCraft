@@ -24,7 +24,8 @@ CrimeCraft is built following modern Android development best practices and inco
 
 ## 🎬 Screenshots & Demo
 ![CrimeCraft Screenshot 1](https://raw.githubusercontent.com/mshajkarami/crimecraft/main/home – 1.png)
-![CrimeCraft Screenshot 2](https://raw.githubusercontent.com/mshajkarami/crimecraft/main/fragment_ detail – 1.png)
+
+![CrimeCraft Screenshot 2](https://raw.githubusercontent.com/mshajkarami/CrimeCraft/main/fragment_detail_1.png)
 
 _A short video demo can be found [here](link-to-video)._  
 
