@@ -23,8 +23,8 @@ CrimeCraft is built following modern Android development best practices and inco
 - **Firebase Integration**: For real-time data synchronization and authentication.
 
 ## 🎬 Screenshots & Demo
-![CrimeCraft Screenshot 1](link-to-image-1)
-![CrimeCraft Screenshot 2](link-to-image-2)
+![CrimeCraft Screenshot 1](https://raw.githubusercontent.com/mshajkarami/crimecraft/main/home – 1.png)
+![CrimeCraft Screenshot 2](https://raw.githubusercontent.com/mshajkarami/crimecraft/main/fragment_ detail – 1.png)
 
 _A short video demo can be found [here](link-to-video)._  
 
